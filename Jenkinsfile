@@ -4,6 +4,8 @@ pipeline {
     environment {
         DOCKER_USER = 'f4bri'
         IMAGE_NAME  = "${DOCKER_USER}/retail-store-u202113310"
+        JAVA_HOME   = '/opt/jdk26'
+        PATH        = "/opt/jdk26/bin:/opt/maven/bin:${env.PATH}"
     }
 
     stages {
